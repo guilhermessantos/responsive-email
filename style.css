@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+@import url('https://use.fontawesome.com/releases/v5.7.2/css/all.css');
+
+body {
+  margin: 0;
+  padding: 0;
+  padding-left: 300px;
+}
+
+.sidebar,
+.form__input,
+.form__button,
+.btn-save {
+  font-family: 'Roboto', sans-serif;
+}
+
+.sidebar__branding {
+  height: auto;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+}
+
+.sidebar__branding svg {
+  display: block;
+  max-width: 170px;
+}
+
+.sidebar {
+  background: #f7f7f7;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 300px;
+  overflow-y: auto;
+}
+
+.content {
+  padding: 30px;
+}
+
+.form__header {
+  border-left: 5px solid transparent;
+  color: #6f6f6f;
+  cursor: pointer;
+  font-weight: 300;
+  padding: 15px 30px 15px 25px;
+  transition: border-color .3s;
+}
+
+.form__header span {
+  display: inline-block;
+  width: 20px;
+}
+
+.form__header i {
+  display: inline-block;
+  font-size: 18px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.form.active,
+#form-banner.active {
+  background: #f1f1f1;
+}
+
+.form.active .form__header,
+#form-banner.active .form__header {
+  box-shadow: 0px 10px 20px 0px #eaeaea;
+  border-left-color: #c0496f;
+  color: #c0496f;
+}
+
+.form.active .form__list {
+  min-height: 510px;
+}
+
+#form-banner.active .form__list {
+  min-height: 260px;
+}
+
+.form__list {
+  color: #a8a8ad;
+  max-height: 0;
+  min-height: 0;
+  overflow: hidden;
+  list-style: none;
+  margin: 0;
+  padding: 0 30px;
+  transition: .5s min-height;
+}
+
+.form__input {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #e2e2e2;
+  color: #2b2b2b;
+  height: 25px;
+  font-size: 14px;
+  width: 100%;
+  outline: 0;
+  margin-top: -2px;
+  transition: border-color .3s;
+}
+
+.form__field {
+  margin-bottom: 20px;
+}
+
+.form__field:first-child {
+  margin-top: 20px;
+}
+
+.form__label {
+  font-size: 11px;
+  transition: color .3s;
+}
+
+.form__label.is-focus {
+  color: #555;
+}
+
+.form__label.is-focus .form__input {
+  border-bottom-color: #555;
+}
+
+.form__button {
+  background: #c0496f;
+  border-radius: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  border: 0;
+  outline: 0;
+  padding: 0 20px;
+  height: 35px;
+  color: #fff;
+  cursor: pointer;
+  transition: background .3s;
+}
+
+.form__button:hover {
+  background: #963755;
+}
+
+.btn-save {
+  color: #fff;
+  cursor: pointer;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  line-height: 35px;
+  background: #4d538c;
+  padding: 0 20px;
+  height: 35px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  transition: background .2s;
+}
+
+.btn-save:hover {
+  background: #7178b9;
+}

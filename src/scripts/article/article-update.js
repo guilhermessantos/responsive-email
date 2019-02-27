@@ -34,5 +34,10 @@ document.querySelectorAll('.form').forEach(form => {
     elements.excerpt.innerHTML = inputs.excerpt || articlePlaceholder.excerpt;
     elements.category.innerHTML = inputs.category || articlePlaceholder.category;
     elements.category.style.background = inputs.color ||  articlePlaceholder.color;
+
+    if (form.id == 'form-1') {
+      document.querySelector('.preview-excerpt h2').innerHTML = inputs.title || articlePlaceholder.title;
+      document.querySelector('.preview-excerpt p').innerHTML = inputs.excerpt || articlePlaceholder.excerpt;      
+    }
   });
 });

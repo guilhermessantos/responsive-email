@@ -1,5 +1,5 @@
 let adsPlaceholder = {
   title: 'Publicidade',
-  url: 'http://personare.com.br',
-  image: 'https://via.placeholder.com/195x310',
+  url: 'http://flow.aquaplatform.com/ck.php?zoneid=955',
+  image: 'http://flow.aquaplatform.com/avw.php?zoneid=955&amp;amp;cb=214987844511',
 }

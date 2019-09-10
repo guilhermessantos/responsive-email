@@ -2,7 +2,6 @@ const branding = '<div class="sidebar__branding"><svg xmlns="http://www.w3.org/2
 
 document.querySelector('.sidebar').innerHTML = `
   ${branding}
-  ${formAdsView()}
   ${formView(1)}
   ${formView(2)}
   ${formView(3)}
